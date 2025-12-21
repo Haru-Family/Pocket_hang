@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>포켓몬 이름 맞추기 (1~251)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>포켓몬 이름 맞추기</h1>
+      <p class="sub">1~251(2세대) / 글자 버튼을 눌러서 맞춰봐!</p>
+    </header>
+
+    <section class="card">
+      <div class="topbar">
+        <div id="stars" class="stars"></div>
+        <div class="meta">
+          <span id="loaded" class="loaded">로딩 중...</span>
+        </div>
+      </div>
+
+      <div id="loadingBox" class="loadingBox">
+        <div class="spinner"></div>
+        <p id="loadingText">포켓몬 데이터를 불러오는 중...</p>
+        <p class="loadingSub">처음 1회만 조금 걸릴 수 있어요.</p>
+      </div>
+
+      <img id="pokeImg" alt="포켓몬 이미지" class="hidden" />
+
+      <p id="masked" class="masked hidden"></p>
+      <p id="msg" class="msg hidden"></p>
+
+      <div id="keyboard" class="keyboard hidden"></div>
+
+      <div class="row hidden" id="buttonsRow">
+        <button id="nextBtn">다음 문제</button>
+        <button id="revealBtn" class="ghost">정답 보기</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
